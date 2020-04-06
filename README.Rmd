@@ -10,6 +10,28 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# How the script works
+## Getting data set
+1. Create two directories called "input" and "output" to store the raw data set and tidy data set
+2. Using download.file() to fetch the data set into "input" directory
+3. Using unzip() to view the file names and path
+4. Read the files needed to analyse after we know which files contained in the "input" directory
+5. Combine X_train, y_train and subject_train in a "dataTrain" data frame, and X_test, y_test and subject_test in a "testTrain" data frame
+6. Rename the colume names of new data frames created in step 5 according to the "feature" data set
+
+## Converting raw data into tidy data
+1. Using rbind to merge "dataTrain" and "dataTest“ into a new data set
+2. Extract only the measurements on the mean and stanard deviation for each measurement by regular expression
+3. Use descriptive activity names to name the activity in the data set created in step 1
+4. Label the data set with descriptive names:
+    i)   prefix t is replaced by time
+    ii)  Acc is replaced by Accelerometer
+    iii) Gyro is replaced by Gyroscope
+    iv)  prefix f is replaced by frequency
+    v)   Mag is replaced by Magnitude
+    vi)  BodyBody is replaced by Body
+5. Created a independent tidy data set with the average of each variable for each activity and each subject from the data set in last step
+
 # Introduction
 The experiments have been carried out with a group of 30 volunteers, who were 19 to 48 years old. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, researchers captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz.
 
