@@ -1,14 +1,9 @@
 ---
 title: "Getiing and Cleaning Data Course Project"
 author: "Junqi Yang"
-output:
-  html_document: default
-  pdf_document: default
+dtae: 2020-4-6
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 # How the script works
 ## Getting data set
