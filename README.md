@@ -1,4 +1,4 @@
-# Getiing and Cleaning Data Course Project"
+# Getiing and Cleaning Data Course Project
 
 ## Introduction
 The experiments have been carried out with a group of 30 volunteers, who were 19 to 48 years old. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, researchers captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz.
